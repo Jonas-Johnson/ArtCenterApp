@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block header %}
+<h1>{% block title %}Class Submission{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+<form method="post">
+  <label for="teacher_name">Teacher First and Last Name</label>
+  <input name="teacher_name" id="teacher_name">
+  <label for="class_name">Class Name</label>
+  <input name="class_name" id="class_name" required>
+  <label for="class_description">Class Description</label>
+  <input name="class_description" id="class_description">
+  <input type="submit" value="Submit Class">
+</form>
+{% endblock %}
